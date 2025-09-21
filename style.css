@@ -1,0 +1,135 @@
+:root {
+    --color-primary: #f91515b3; /* Naranja/rojo suave */
+    --color-secondary: #FDF5E6; /* Beige claro, tipo crema */
+    --color-text: #333;
+    --color-background: #f8f8f8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.hero-section {
+    background: var(--color-primary);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header-content h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.container.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h3 {
+    color: var(--color-primary);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.benefits-section {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: var(--color-primary);
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.benefit-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, .container.reverse-layout {
+        flex-direction: column;
+    }
+}
