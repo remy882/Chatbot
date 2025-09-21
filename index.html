@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco INTI</title>
+</head>
+<body>
+    <h1>Bienbenido a mi banco INTI</h1>
+    <script type="text/javascript">
+  (function(d, t) {
+    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    v.onload = function() {
+      window.voiceflow.chat.load({
+        verify: { projectID: '68b9b43575e6e8784df0438d' },
+        url: 'https://general-runtime.voiceflow.com',
+        versionID: 'production',
+        voice: {
+          url: "https://runtime-api.voiceflow.com"
+        },
+        // Aquí se agrega el objeto de estilos
+        styles: {
+          position: "right",
+          size: {
+            width: 400,
+            height: 500
+          },
+          theme: {
+            primary: "#4CAF50", // Color del encabezado
+            secondary: "#FFFFFF" // Color de la burbuja del bot
+          },
+          buttons: {
+            // Personaliza el icono de inicio del chat
+            startChat: {
+              background: "#4CAF50",
+              color: "#FFFFFF"
+            }
+          }
+        }
+      });
+    }
+    v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>
